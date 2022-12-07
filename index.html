@@ -1,25 +1,207 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <style>
-                        body {
-                                background-color: gray;
-                        }
-                </style>
-        </head>
-        <body>
-                <input type="image" id="image" alt="CSBadge"
-                       src="/images/CS_Logo_Badge.png"
-                       width=400>
-                <h2 style="color: white">Helping you move at your fastest!</h2>
-                <form action="/action_page.php">
-                        <label for="fname">First name:</label>
-                                <input type="text" id="fname" name="fname"><br><br>
-                        <label for="lname">Last name:</label>
-                                <input type="text" id="lname" name="lname"><br><br>
-                               
-                                <input type="submit" value="Submit">
-                        <label for="lname"><script src="./node_scripts/index.js"></script></label>
-                </form>
-        </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Web Solutions Provider for Small
+                                Businesses.">
+        <meta name="keywords" content="Cloud, Solutions, Web, Cloud, SaaS">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Crunchy Solutions Inc.</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"
+         type="text/css">
+        
+        <style>
+            body {
+                background-color: white; 
+                color: black;
+                border-color: green;
+                border-width: 5px;
+                border-style: solid;
+            }
+            h1 {
+                text-align: center;
+            }
+            div {
+                border-color: red;
+                border-width: 2px;
+                border-style: dotted;
+            }
+            
+            .headcontainer {
+                --logo-width: 200px;
+                display: grid;
+                grid-template-columns: var(--logo-width) auto;
+                grid-column-gap: 10px;
+            }
+            .hc2 {
+                justify-self: right;
+                align-self: center;
+                margin: 10px;
+            }
+            #icons {
+                width: var(--logo-width);
+            }
+            
+            .main1 {
+                display: grid;
+                background-color: blue; 
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto 100px;
+                grid-column-gap: 10px;
+            }
+            .m1_1 {
+                grid-column: 1 / 4;
+                justify-self: center;
+                align-self: center;
+                width: 100%
+            }
+            .m1_2 {
+                justify-self: center;
+                align-self: center;
+            }
+            
+            .main2 {
+                display: grid;
+                background-color: green; 
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto 100px;
+                grid-column-gap: 10px;
+            }
+            .m2_1 {
+                grid-column: 1 / 4;
+                justify-self: center;
+                align-self: center;
+                width: 100%
+            }
+            .m2_2 {
+                justify-self: center;
+                align-self: center;
+            }
+            
+            .footerdiv {
+                display: grid;
+                grid-template-columns: 100px auto 250px;
+                grid-template-rows: 100px 100px;
+            }
+            #emaillink {
+                grid-column: 1 / 4;
+                grid-row: 1 / 2;
+                justify-self: center;
+                align-self: center;
+                width: 20%;
+            }
+            .socmedialinks {
+                --icon-width: 30px;
+                display: grid;
+                grid-template-columns: 1fr repeat(4,var(--icon-width));
+                grid-column-gap: 5px;
+            }
+            .socmediaicon {
+                justify-self: center;
+                align-self: center;
+                width: var(--icon-width);
+            }
+            #smicons {
+                width: var(--icon-width);
+            }
+            @media (max-width: 500px){
+                .socmedialinks {
+                    --icon-width: 20px;
+                    grid-template-columns: 1fr repeat(4,var(--icon-width));
+                    width: var(--icon-width);
+                }
+            }
+        </style>
+        <script crossorigin
+            src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin
+            src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class="headcontainer">
+                <div class="hc1">
+                    <input type="image" id="icons" alt="CSBadge"
+                        src="/images/CS_Logo_Text.png">
+                </div>
+                <div class="hc2">
+                    <input type="submit" onclick="login()" value="LogIn" width=50>
+                </div>
+            </div> 
+        </header>
+
+        <main>
+            <article>
+                <section> <!-- not strictly necessary, but good for SEO and
+                    organization -->
+                    
+                    <div class="main1">
+                        <div class="m1_1">
+                            <h1>Web Solutions Provider for Small Businesses</h1>
+                        </div>
+                        <div class="m1_2">
+                            <p>Solution1</p>
+                        </div>
+                        <div class="m1_2">
+                            <p>Solution2</p>
+                        </div>
+                        <div class="m1_2">
+                            <p>Solution3</p>
+                        </div>
+                    </div>
+                    <div class="main2">
+                        <div class="m2_1">
+                            <h1>Our Toolsets</h1>
+                        </div>
+                        <div class="m2_2">
+                            <p>Tool1</p>
+                        </div>
+                        <div class="m2_2">
+                            <p>Tool2</p>
+                        </div>
+                        <div class="m2_2">
+                            <p>Tool3</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <div class="footerdiv">
+                <div id="emaillink">
+                    <p id="emailtxt">Join the email list!</p>
+                </div>
+                <div class="footerblock">
+                    <p>Crunchy Solutions LLC. 2022</p>
+                </div>
+                <div class="footerblock">
+                    <p>Statements</p>
+                </div>
+                <div class="socmedialinks">
+                    <div></div>
+                    <div class="socmediaicon">
+                        <img id="smicons"
+                            src="/images/FB.png">
+                    </div>
+                    <div class="socmediaicon">
+                        <img id="smicons" 
+                            src="/images/IG.png">
+                    </div>
+                    <div class="socmediaicon">
+                        <img id="smicons" 
+                            src="/images/TW.png">
+                    </div>
+                    <div class="socmediaicon">
+                        <img id="smicons" 
+                            src="/images/LI.png">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/babel" src="react_scripts/index.js"></script>
+    <!--<script type="text/javascript" src="js_scripts/login.js"></script>-->
+    </body>
 </html>
