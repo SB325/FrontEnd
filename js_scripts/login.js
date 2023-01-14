@@ -1,6 +1,5 @@
-/*let loginbutton = document.getElementsByClassName('hc2');
-*/
+document.getElementById("loginid").onclick = function() {login()};
+
 function login() { 
-    let msg = document.getElementById('emailtxt');
-    msg.textContent = "Hello World"
+    document.getElementById("emailtxt").textContent = "Hello World";
 }
