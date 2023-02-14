@@ -1,3 +1,6 @@
+Running batch in backgroun:
+start /MIN cmd.exe start_nginx.bat
+
 https://www.maketecheasier.com/install-nginx-server-windows/#:~:text=Nginx%20is%20a%20web%20server,problems%20in%20a%20future%20release.
 
 

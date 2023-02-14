@@ -1,3 +1,6 @@
 @ECHO OFF
 
-start "C:\Program Files\nginx-1.22.1\nginx.exe" -c C:\Users\sfb_s\src\nginx_conf\nginx.conf
+CD "C:\Program Files\nginx-1.22.1\"
+START nginx -c C:\Users\sfb_s\src\FrontEnd\nginx_conf\nginx.conf 
+
+CD %~dp0 
