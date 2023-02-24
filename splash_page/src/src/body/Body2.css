@@ -1,0 +1,37 @@
+img.bg {
+    /* Set rules to fill background */
+    min-width: 100%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: center;
+    top: 0;
+    left: 0;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically
+     * */
+    height: 80%;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+        img.bg {
+                    left: 50%;
+                            margin-left: -512px;   /* 50% */
+                                }
+                            }

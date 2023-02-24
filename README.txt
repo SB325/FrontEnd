@@ -15,3 +15,6 @@ Start-Service -DisplayName "Nodejs"
 In Node, each .js file is a module, and all functions/variables within it are scoped to that module. to use a var/function of a module in another script/module, you must export/import it, similarly to python include.
 
 use jshint for batch debugging of javascript code
+
+Javascript REACT bootstrap
+https://getbootstrap.com/docs/4.0/components/navbar/

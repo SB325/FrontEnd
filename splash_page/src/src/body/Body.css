@@ -1,0 +1,55 @@
+:root {
+    --radvalues: 50%;
+    --cardwidth: 300px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.backdrop {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.backdrop img {
+    width: 100vw;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Raleway, sans-serif;
+    font-size: 3em;
+}
+
+.accordionHeaderDiv {
+    width:100%;
+}
+.accordionHeaderTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.accordionImage {
+    width: 100%;
+    margin: 0px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, var(--cardwidth));
+    gap: 40px;
+    justify-content: center;
+}
+
+.cardUnit {
+    justify-self: center;
+    align-self: top;
+    width: var(--cardwidth); 
+}
+.card-text {
+    overflow: scroll;
+    height: 100px;
+}

@@ -1,0 +1,33 @@
+.toggler {
+    width: 50px;
+    height: 35px;
+    border-style: none;
+    /*border-width: thick;*/
+}
+
+#nbBrand {
+    font-size: 25px;
+}
+
+#navbarScroll {
+    maxHeight: '200px' 
+}
+
+.headlinks {
+    font-size: 25px;
+}
+
+@media (max-width: 991px){
+    .toggler {
+        width: 100px;
+        height: 75px;
+        border-style: solid;
+        border-width: thick;
+    }
+    #nbBrand {
+        font-size: 50px;
+    }
+    .headlinks {
+        font-size: 40px;
+    }
+}
