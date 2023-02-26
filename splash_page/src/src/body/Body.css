@@ -1,6 +1,13 @@
 :root {
     --radvalues: 50%;
-    --cardwidth: 300px;
+    --cardwidth: 350px;
+    --cardradius: 0.5em;
+    
+    --cardtextsizemobile: 2em; 
+    --cardtitlesizemobile: 2.5em; 
+    --accordiontextsizemobile: 5em; 
+
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
@@ -23,33 +30,97 @@
     font-size: 3em;
 }
 
-.accordionHeaderDiv {
-    width:100%;
+.majorDivBlock  {
+    margin: 0 10vw 0;
 }
-.accordionHeaderTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.majorDivBlock h1 {
+    text-align: center;
 }
-.accordionImage {
-    width: 100%;
-    margin: 0px;
+
+.majorDivBlock p {
+    text-align: center;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(2, var(--cardwidth));
+    display: flex;
+    grid-template-columns: repeat(3, var(--cardwidth));
     gap: 40px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
+.card {
+    width: '18rem';
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
 .cardUnit {
     justify-self: center;
     align-self: top;
     width: var(--cardwidth); 
 }
+
+.cardUnit:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.5);
+    transition: background .3s linear;
+    border-radius: var(--cardradius);
+}
+
+.cardUnit:hover:before {
+    background: none;
+    border-radius: var(--cardradius);
+}
+
 .card-text {
     overflow: scroll;
-    height: 100px;
+    height: 250px;
+    color: white;
+    text-shadow: 0 0 2px #000000;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.cardUnit:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.7);
+    transition: background .3s linear;
+}
+
+.cardUnit:hover:before {
+    background: rgba(0,0,0, 0.5);;
+}
+
+.card-title {
+    color: white;
+    text-shadow: 0 0 2px #000000;
+}
+
+@media (max-width: 991px){
+    .card-text {
+        font-size: var(--cardtextsizemobile); 
+    }
+
+    .card-title {
+        font-size: var(--cardtitlesizemobile); 
+    }
+
+    .accordion-header {
+        font-size: var(--accordiontextsizemobile); 
+    }    
 }

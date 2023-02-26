@@ -2,18 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './header/Header.js';
-import { Body1, Body3 } from './body/Body.js';
+import { Body1, SubjectMatter, Code, Environments, TeamRoles } from './body/Body.js';
 //import Footer from './footer/Footer.js';
 import reportWebVitals from './reportWebVitals';
-
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Header />
         <Body1 />
-        <Body3 />
+        <br></br>
+        <SubjectMatter />
+        <br></br>
+        <Code />
+        <br></br>
+        <Environments />
+        <br></br>
+        <TeamRoles />
+        <br></br>
     </React.StrictMode>
 );
 
