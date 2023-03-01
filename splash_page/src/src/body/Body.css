@@ -111,6 +111,10 @@
     text-shadow: 0 0 2px #000000;
 }
 
+.ListGroupItem {
+    align-self: bottom;
+}
+
 @media (max-width: 991px){
     .card-text {
         font-size: var(--cardtextsizemobile); 

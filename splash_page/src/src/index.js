@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './header/Header.js';
 import { Body1, SubjectMatter, Code, Environments, TeamRoles } from './body/Body.js';
-//import Footer from './footer/Footer.js';
+import Footer from './footer/Footer.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +20,7 @@ root.render(
         <br></br>
         <TeamRoles />
         <br></br>
+        <Footer />
     </React.StrictMode>
 );
 

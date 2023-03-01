@@ -143,7 +143,7 @@ const Code = () => (
                         </Card.Text>
                     </Card.Body>
                 </Card.ImgOverlay>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="mt-auto">
                     <ListGroup.Item>Use Cases</ListGroup.Item>
                 </ListGroup>
             </Card>
@@ -158,7 +158,7 @@ const Code = () => (
                         </Card.Text>
                     </Card.Body>
                 </Card.ImgOverlay>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="mt-auto">
                     <ListGroup.Item>Use Cases</ListGroup.Item>
                 </ListGroup>
             </Card>
@@ -205,7 +205,7 @@ const Environments = () => (
                         </Card.Text>
                     </Card.Body>
                 </Card.ImgOverlay>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="mt-auto">
                     <ListGroup.Item>Use Cases</ListGroup.Item>
                 </ListGroup>
             </Card>
@@ -220,7 +220,7 @@ const Environments = () => (
                         </Card.Text>
                     </Card.Body>
                 </Card.ImgOverlay>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="mt-auto">
                     <ListGroup.Item>Use Cases</ListGroup.Item>
                 </ListGroup>
             </Card>
@@ -267,7 +267,7 @@ const TeamRoles = () => (
                         </Card.Text>
                     </Card.Body>
                 </Card.ImgOverlay>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="mt-auto">
                     <ListGroup.Item>Experience</ListGroup.Item>
                 </ListGroup>
             </Card>
