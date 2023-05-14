@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './header/Header.js';
-import { Body1, SubjectMatter, Code, Environments, TeamRoles } from './body/Body.js';
+import { Body1, Code, Environments, TeamRoles } from './body/Body.js';
 import Footer from './footer/Footer.js';
 import reportWebVitals from './reportWebVitals';
+import SubjectMatter from './subjectMatter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

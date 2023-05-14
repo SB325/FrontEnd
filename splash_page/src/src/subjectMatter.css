@@ -2,31 +2,13 @@
     --radvalues: 50%;
     --cardwidth: 350px;
     --cardradius: 0.5em;
-    
+
     --cardtextsizemobile: 2em; 
     --cardtitlesizemobile: 2.5em; 
     --accordiontextsizemobile: 5em; 
-
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
-.specialMessage1 {
-    text-align: center;
-    font-size: 3em;
-    font-family: Raleway, sans-serif;
-}
-.specialMessage2 {
-    text-align: center;
-    font-size: 2em;
-    font-family: Raleway, sans-serif;
-}
-.specialMessage3 {
-    text-align: center;
-    font-size: 1em;
-    font-family: Raleway, sans-serif;
-}
 
 .backdrop {
     position: relative;

@@ -2,11 +2,10 @@ import './Body.css';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import backdropimg from '../images/webpage_backdrop_stars.png';
 
 const Body1 = () => (
     <div className="backdrop">
-        <img src={backdropimg} alt="Stars" ></img>
+        <img src="images/webpage_backdrop_stars.png" alt="Stars" ></img>
         <div className="centered">
             Automation at Scale
         </div>
@@ -20,6 +19,66 @@ const SubjectMatter = () => (
         <br></br>
         <h1>Subject Matter</h1>
         <p>The lazy fox jumps over the quick dog</p>
+        <div className="cards">
+            <Card className="cardUnit">
+                <Card.Img src="images/radar_radar_equipment_navigation.jpg" 
+                    alt="Sensor Image"/>
+                <Card.ImgOverlay>
+                    <Card.Body>
+                        <Card.Title>Sensors</Card.Title>
+                        <Card.Text>
+                            Sensors help us automate the perception of our environments. My work spans many sensor modalities. 
+                        </Card.Text>
+                    </Card.Body>
+                </Card.ImgOverlay>
+                <Accordion>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>Sensor Phenomenology</Accordion.Header>
+                        <Accordion.Body>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header>Sensor Fusion</Accordion.Header>
+                        <Accordion.Body>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header>Environmental Domains</Accordion.Header>
+                        <Accordion.Body>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </Card>
+            <Card className="cardUnit">
+                <Card.Img src="images/analysis_trading_forex_515243.jpg"
+                    alt="Stock Image"/>
+                <Card.ImgOverlay>
+                    <Card.Body>
+                        <Card.Title>Stock Market Analysis</Card.Title>
+                        <Card.Text>
+                            Predicting future price movement seems like a fool's errand. My analysis seeks to determine whether the "Efficient Markets Theory" is valid at short time scales.
+                        </Card.Text>
+                    </Card.Body>
+                </Card.ImgOverlay>
+                <Accordion>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>Technical Analysis</Accordion.Header>
+                        <Accordion.Body>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header>Fundamental Analysis</Accordion.Header>
+                        <Accordion.Body>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header>News/Social Media Sentiment Analysis</Accordion.Header>
+                        <Accordion.Body>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </Card>
+        </div>
     </div>
 );
 
